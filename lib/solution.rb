@@ -5,7 +5,7 @@ def balanced_brackets( str )
   return false if str.length % 2 == 1
 
   # loop through the characters of str
-  str.each do |char|
+  str.each_char do |char|
     # count 1 every time an open [ is found
     # and subtract 1 if a closed ] is found
     if char == '['
